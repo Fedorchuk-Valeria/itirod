@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="MainPage.css"> 
+  </head>
+  <body>
+    <aside>
+        <nav>
+            <button onclick="document.location='./Modules.html'">Modules</button>
+            <button onclick="document.location='./Timetable.html'">Full timetable</button>
+        </nav>
+        <section class="centered">
+            <form>
+                <p>Add new lesson</p>
+    
+                <div class="space-between">
+                    <label for="typeSelect">Type</label>
+                    <select name="" id="typeSelect">
+                        <option>type1</option>
+                        <option>type2</option>
+                    </select>
+                </div>
+    
+                <div class="space-between">
+                    <label for="timeSelect">Time</label>
+                    <select name="" id="timeSelect">
+                        <option>time1</option>
+                        <option>time1</option>
+                    </select>
+                </div>
+    
+                <div class="space-between">
+                    <label for="daySelect">Day of week</label>
+                    <select name="" id="daySelect">
+                        <option>day1</option>
+                        <option>day2</option>
+                    </select>
+                </div>
+    
+                <div class="space-between">
+                    <label for="locationSelect">Location</label>
+                    <select name="" id="locationSelect">
+                        <option>location1</option>
+                        <option>location2</option>
+                    </select>
+                </div>
+    
+                <button style="background-color: #FBCEB1" type="submit">Add</button>
+            </form>
+        </section>
+    </aside>
+    <main> 
+        <h1>Timetable</h1>
+        <ul>
+            <li class="lesson">
+                <p>title</p>
+                <div class="space-between">
+                    <p>15:00</p>
+                    <p>junior group</p>
+                    <p>ScratchJR</p>
+                    <p>Introduction</p>
+                </div>
+                <p>location1</p>
+            </li>
+
+            <li class="lesson">
+                <p>title</p>
+                <div class="space-between">
+                    <p>15:00</p>
+                    <p>junior group</p>
+                    <p>ScratchJR</p>
+                    <p>Introduction</p>
+                </div>
+                <p>location1</p>
+            </li>
+        </ul>
+    </main>
+
+  </body>
+</html>
