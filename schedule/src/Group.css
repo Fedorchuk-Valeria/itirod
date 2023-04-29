@@ -2,44 +2,34 @@
     font-size: 1.5rem;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
+body, html {
+    height: 100%;
     width: 100%;
 }
 
-section {
-    height: 93%;
+.header {
     width: 100%;
+    height: 70px; 
+}
+
+
+.section {
+    height: calc(100% - 70px);
+    width: 100%;
+}
+
+.centered {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-header {
-    width: 100%;
-    height: 7%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FBCEB1
-}
-
-form {
-    background-color: rgb(237, 236, 236);
-    width: 70%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-button, select, input {
+.form {
     background-color: inherit;
-    font-size: inherit;
     font-family: inherit;
     border: none;
     margin: 10px;
@@ -47,25 +37,80 @@ button, select, input {
     text-align: center;
 }
 
-input {
-    border-bottom: 2px solid #FBCEB1;
-    width: 60%;
+.no_default_styles {
+    background-color: inherit;
+    font-family: inherit;
+    border: none;
+    padding: 10px;
+    text-align: center;
 }
 
-.space-between {
-    width: 90%;
+.peach_bottom_border {
+    border-bottom: 2px solid #FBCEB1;
+}
+
+.peach_background_color {
+    background-color: #FBCEB1;
+}
+
+.gray_background_color {
+    background-color: rgb(237, 236, 236);
+}
+
+.bigger_font_size{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.space_between {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
     *{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
-    form {
-        width: 95%;
-        height: 80%;
+    .small_input {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .small_input {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    *{
+        font-size: 1.3rem;
+    }
+
+    .small_input {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    *{
+        font-size: 1.2rem;
+    }
+
+    .small_input {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    *{
+        font-size: 1.2rem;
+    }
+
+    .small_input {
+        width: 170px;
     }
 }

@@ -3,75 +3,76 @@
   <head>
     <meta charset="utf-8">
     <title>Main Page</title>
-    <link rel="stylesheet" href="MainPage.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./MainPage.css"> 
   </head>
   <body>
-    <aside>
-        <nav>
-            <button onclick="document.location='./Modules.html'">Modules</button>
-            <button onclick="document.location='./Timetable.html'">Full timetable</button>
+    <aside class="aside">
+        <nav class="nav space_between peach_background_color">
+            <button  class="no_default_styles" onclick="document.location='./Modules.html'">Modules</button>
+            <button  class="no_default_styles" onclick="document.location='./Timetable.html'">Full timetable</button>
         </nav>
         <section class="centered">
-            <form>
-                <p>Add new lesson</p>
+            <form class="full_width indented centered_row gray_background_color">
+                <p>Add new group</p>
     
-                <div class="space-between">
+                <div class="space_between">
                     <label for="typeSelect">Type</label>
-                    <select name="" id="typeSelect">
+                    <select class="no_default_styles" name="" id="typeSelect">
                         <option>type1</option>
                         <option>type2</option>
                     </select>
                 </div>
     
-                <div class="space-between">
+                <div class="space_between">
                     <label for="timeSelect">Time</label>
-                    <select name="" id="timeSelect">
+                    <select class="no_default_styles" name="" id="timeSelect">
                         <option>time1</option>
                         <option>time1</option>
                     </select>
                 </div>
     
-                <div class="space-between">
+                <div class="space_between">
                     <label for="daySelect">Day of week</label>
-                    <select name="" id="daySelect">
+                    <select class="no_default_styles" name="" id="daySelect">
                         <option>day1</option>
                         <option>day2</option>
                     </select>
                 </div>
     
-                <div class="space-between">
+                <!-- <div class="space_between">
                     <label for="locationSelect">Location</label>
-                    <select name="" id="locationSelect">
+                    <select class="no_default_styles" name="" id="locationSelect">
                         <option>location1</option>
                         <option>location2</option>
                     </select>
-                </div>
+                </div> -->
     
-                <button style="background-color: #FBCEB1" type="submit">Add</button>
+                <button class="no_default_styles peach_background_color" type="submit">Add</button>
             </form>
         </section>
     </aside>
-    <main> 
+    <main class="main centered_row"> 
         <h1>Timetable</h1>
-        <ul>
-            <li class="lesson">
+        <ul class="centered_row full_width">
+            <li class="centered_row gray_background_color full_width indented">
                 <p>title</p>
-                <div class="space-between">
-                    <p>15:00</p>
-                    <p>junior group</p>
-                    <p>ScratchJR</p>
-                    <p>Introduction</p>
+                <div class="lesson space_between">
+                    <p class="indented">15:00</p>
+                    <p class="indented">junior group</p>
+                    <p class="indented">ScratchJR</p>
+                    <p class="indented">Introduction</p>
                 </div>
                 <p>location1</p>
             </li>
 
-            <li class="lesson">
+            <li class="centered_row gray_background_color full_width indented">
                 <p>title</p>
-                <div class="space-between">
-                    <p>15:00</p>
-                    <p>junior group</p>
-                    <p>ScratchJR</p>
-                    <p>Introduction</p>
+                <div class="lesson space_between">
+                    <p class="indented">15:00</p>
+                    <p class="indented">junior group</p>
+                    <p class="indented">ScratchJR</p>
+                    <p class="indented">Introduction</p>
                 </div>
                 <p>location1</p>
             </li>
