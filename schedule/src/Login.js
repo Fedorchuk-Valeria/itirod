@@ -1,5 +1,5 @@
 
-import { getDatabase, set, get, update, remove, push, ref, query, limitToLast, child, onValue } from './firebaseInitializer.js'
+import {database, getDatabase, set, get, update, remove, push, ref, query, limitToLast, child, onValue } from './firebaseInitializer.js'
 
 // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 

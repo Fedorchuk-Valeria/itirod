@@ -1,5 +1,5 @@
 
-import { getDatabase, set, get, update, remove, push, ref, query, limitToLast, child, onValue } from './firebaseInitializer.js'
+import {database, getDatabase, set, get, update, remove, push, ref, query, limitToLast, child, onValue } from './firebaseInitializer.js'
 
         // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 
@@ -18,7 +18,7 @@ import { getDatabase, set, get, update, remove, push, ref, query, limitToLast, c
         // import {getDatabase, set, get, update, remove, push, ref, query, limitToLast, child, onValue}
         // from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
         // const database = getDatabase();
-        // let dbref = ref(database)
+        let dbref = ref(database)
 
         //_________________________________________________________________________________________
 
