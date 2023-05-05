@@ -16,82 +16,32 @@
                 <p class="bigger_font_size">Add new module</p>
     
                 <div class="space_between">
-                    <label for="typeSelect">Group type</label>
-                    <select class="no_default_styles" name="" id="typeSelect">
-                        <option>type1</option>
-                        <option>type2</option>
-                    </select>
+                    <label for="moduleInput">Module name</label>
+                    <input class="no_default_styles peach_bottom_border indented full_width" id="moduleInput">
                 </div>
     
                 <div class="space_between">
-                    <label for="groupNameSelect">Module name</label>
-                    <select class="no_default_styles" name="" id="groupNameSelect">
-                        <option>name1</option>
-                        <option>name2</option>
-                    </select>
-                </div>
-    
-                <div class="space_between">
-                    <label for="lessonNameSelect">Lesson name</label>
-                    <select class="no_default_styles" name="" id="lessonNameSelect">
-                        <option>name1</option>
-                        <option>name2</option>
-                    </select>
+                    <label for="themeInput">Lesson name</label>
+                    <input class="no_default_styles peach_bottom_border indented  " id="themeInput">
+                    <button class="no_default_styles peach_background_color" id="addThemeButton">Add Theme</button>
                 </div>
 
-                <button class="no_default_styles peach_background_color" type="submit">Add</button>
+                <p>themes:</p>
+                <div id="themeContainer"> </div>
+
+                <button 
+                    class="no_default_styles peach_background_color indented"
+                    type="submit"
+                    id="addModuleButton"
+                > Add </button>
             </form>
         </section>
     </aside>
+
     <main class="main centered_row"> 
-        <div class="space_between full_width indented">
-            <label for="groupNameSelect">Group type</label>
-            <select class="no_default_styles" name="" id="groupNameSelect">
-                <option>name1</option>
-                <option>name2</option>
-            </select>
-        </div>
-
-        <ul class="centered_row full_width indented">
-            <li class="centered_row gray_background_color indented full_width">
-                <p class="bigger_font_size">Name</p>
-                <p>lessons:</p>
-                <ul class="centered_row top_border full_width">
-                    <li class="space_between full_width">
-                        <p>lesson1</p>
-                        <button class="no_default_styles left-border"> Delete </button>
-                    </li>
-                    <li class="space_between full_width">
-                        <p>lesson2</p>
-                        <button class="no_default_styles left-border"> Delete </button>
-                    </li>
-                    <li class="space_between full_width">
-                        <p>lesson3</p>
-                        <button class="no_default_styles left-border"> Delete </button>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="centered_row gray_background_color indented full_width">
-                <p class="bigger_font_size">Name</p>
-                <p>lessons:</p>
-                <ul class="centered_row top_border full_width">
-                    <li class="space_between full_width">
-                        <p>lesson1</p>
-                        <button class="no_default_styles left-border"> Delete </button>
-                    </li>
-                    <li class="space_between full_width">
-                        <p>lesson2</p>
-                        <button class="no_default_styles left-border"> Delete </button>
-                    </li>
-                    <li class="space_between full_width">
-                        <p>lesson3</p>
-                        <button class="no_default_styles left-border"> Delete </button>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+        <ul class="centered_row full_width indented" id="moduleContainer"> </ul>
     </main>
 
+    <script type="module" src="./Modules.js"> </script>
   </body>
 </html>
